@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js"> </script>
+<link type="text/css" rel="stylesheet" href="style.css">
+ <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+</head>
+
+<body>
+<div id="wrapper" class="animated fadeIn">
+<h1>Contact us</h1>
+    <h3><span class="italic">Got a question?</span> <br/> 
+    We'd love to hear from you. Send us a message and we'll respond as soon as possible. </h3>
+
+<form id="theForm" action="message.html" method="post" onSubmit="return validateTextbox();">
+   
+    <fieldset>
+    
+    <input type="text" name="name" id="name" placeholder="Name">
+        <div class="errormsg">*please enter your name</div>
+    </fieldset>
+    
+    <fieldset>
+   
+    <input type="text" name="email" id="email" placeholder="Email address">
+    <div class="errormsg">*please enter your email address</div>
+    </fieldset>
+    
+    <fieldset>
+    
+    <input type="text" name="subject" id="subject" placeholder="Subject">
+    <div class="errormsg">*please enter subject</div>
+    </fieldset>
+    
+    <fieldset>
+   
+    <textarea type="text" name="message" id="message" placeholder="Your message"></textarea>
+    <div class="errormsg">*please enter your message</div>
+    </fieldset>
+    
+    <fieldset>
+        <label><input type="checkbox" name="privacy" id="checkbox">I accept the <a href="#">terms and conditions</a>.</label>
+     <div class="errormsg">*please tick the box to confirm</div>
+    </fieldset>
+    
+    <button id="submitButton" type="submit" value="Submit">Submit</button> 
+</form>
+    </div>
+</body>
+
+</html>

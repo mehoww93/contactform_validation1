@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400|Yeseva+One&subset=latin-ext');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #c31432;
+    /*fallback*/
+    background: linear-gradient(to top, #240b36, #c31432);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#wrapper {
+    margin: 0 100px;
+}
+
+h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Yeseva One', cursive;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px 0 15px 0;
+    max-width: 420px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+h3.thanks {
+    max-width: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+fieldset {
+    margin: 0;
+    padding: 10px 0;
+    border: 0;
+}
+
+
+textarea,
+input {
+    border: none;
+    overflow: auto;
+    outline: none;
+    font-size: 0.85rem;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px 5px;
+    width: 80%;
+    margin: 0 10%;
+    min-height: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    vertical-align: middle;
+}
+
+input {
+    width: 80%;
+    margin: 0 10%;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#submitButton,
+#goBack {
+    outline: none;
+    padding: 1rem 3rem;
+    margin: 15px 30%;
+    font-size: 1.2rem;
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    width: 40%;
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitButton::before,
+#goBack::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+}
+
+#submitButton::before,
+#goBack::before {
+    background: white;
+    transform: scale(0, 1);
+    transition: transform ease-out 250ms;
+}
+
+#submitButton:hover::before,
+#goBack:hover::before {
+    transform: scale(1, 1);
+}
+
+#submitButton:hover,
+#goBack:hover {
+    color: #240b36;
+}
+
+.errormsg {
+    width: 80%;
+    margin: 4px 10% 0 10%;
+    font-size: 0.8rem;
+    display: none;
+}
+
+#checkbox {
+    width: 0.8rem;
+    margin-right: 2%;
+    box-shadow: none;
+    padding: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+label {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+#checkBox a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 460px) {
+
+    #wrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #submitButton,
+    #goBack {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        width: 40%;
+        margin: 10px 30% 0 30%;
+
+
+
+    }
+
+}
